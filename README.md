@@ -25,7 +25,7 @@
 ## Description
 CMIRB (Chinese Medical Information Retrieval Benchmark) is a specialized multi-task dataset designed specifically for medical information retrieval.
 
-![CMIRB](assets/bench.pdf)
+![CMIRB](assets/bench.jpg)
 
 ## Installation
 CMIRB is developed based on [C-MTEB](https://github.com/FlagOpen/FlagEmbedding/tree/master/C_MTEB). 
