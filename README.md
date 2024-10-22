@@ -48,7 +48,7 @@ python eval_CMIRB.py --model_name_or_path BAAI/bge-large-zh
 * **With C-MTEB scripts** 
 
 You can directly evaluate MIR tasks within the [C-MTEB](https://github.com/FlagOpen/FlagEmbedding/tree/master/C_MTEB) code framework. 
-Simply create a new task in [Retrieval.py](https://github.com/FlagOpen/FlagEmbedding/blob/master/C_MTEB/C_MTEB/tasks/Retrieval.py), following the structure of the [MedExamRetrieval](./CMIRB/Retrieval.py).
+Simply create a new task in [Retrieval.py](https://github.com/FlagOpen/FlagEmbedding/blob/master/C_MTEB/C_MTEB/tasks/Retrieval.py), following the structure of the [MedExamRetrieval](./CMIRB/tasks/Retrieval.py).
 
 Then, you can conduct evaluations 
 ```python
