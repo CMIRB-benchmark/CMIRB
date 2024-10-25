@@ -3,6 +3,9 @@
     <a href="https://www.python.org/">
             <img alt="Build" src="https://img.shields.io/badge/Contribution-Welcome-blue">
     </a>
+    <a href="https://arxiv.org/abs/XXXX">
+        <img alt="arXiv" src="https://img.shields.io/badge/arXiv-article-green">
+    </a>
     <a href="https://huggingface.co/CMIRB">
         <img alt="Build" src="https://img.shields.io/badge/CMIRB-🤗-yellow">
     </a>
@@ -23,7 +26,7 @@
 </h4>
 
 ## Description
-CMIRB (Chinese Medical Information Retrieval Benchmark) is a specialized multi-task dataset designed specifically for medical information retrieval.
+CMIRB (Chinese Medical Information Retrieval Benchmark) is a specialized multi-task dataset designed specifically for medical information retrieval. It consists of data collected from various medical online websites, encompassing 5 tasks and 10 datasets, and has practical application scenarios.
 
 <p align="center">
   <img src="assets/bench.jpg" alt="CMIRB" width="600"/>  
@@ -40,9 +43,9 @@ These packages are necessary: transformers, datasets, beir, mteb.
 ### Evaluate embedding model
 * **With our scripts**
 
-You can **reproduce the results of `baai-general-embedding (bge)`** using the provided python script (see [eval_CMIRB.py](./eval_CMIRB.py) )
+You can **reproduce the results of [baai-general-embedding (bge)](https://huggingface.co/BAAI/bge-large-zh-v1.5)** using the provided python script (see [eval_CMIRB.py](./eval_CMIRB.py) )
 ```bash
-python eval_CMIRB.py --model_name_or_path BAAI/bge-large-zh
+python eval_CMIRB.py --model_name_or_path BAAI/bge-large-zh-v1.5
 ```
 
 * **With C-MTEB scripts** 
@@ -58,7 +61,6 @@ evaluation = MTEB(tasks=["MedExamRetrieval"], task_langs=['zh', 'zh-CN'])
 ## Leaderboard
 
 ### Information Retrieval 
-
 | Model | Dim. | Avg. | MedExam | DuBaike | DXYDisease | Medical | Cmedqa | DXYConsult | Covid | IIYiPost | CSLCite | CSLRel |  
 |:-------------------------------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | [text2vec-large-zh](https://huggingface.co/GanymedeNil/text2vec-large-chinese) | 1024 | 30.56 | 41.39 | 21.13 | 41.52 | 30.93 | 15.53 | 21.92 | 60.48 | 29.47 | 20.21 | 23.01 |
@@ -77,7 +79,7 @@ evaluation = MTEB(tasks=["MedExamRetrieval"], task_langs=['zh', 'zh-CN'])
 An overview datasets available in CMIRB is provided in the following table:
 
 | Name |  Hub URL | Description | Query #Samples | Doc #Samples | 
-|-----|-----|---------------------------|-----|-----|
+|:-----:|:-----:|:---------------------------:|:-----:|:-----:|
 | [MedExamRetrieval](https://arxiv.org/abs/xxxx) | [CMIRB/MedExamRetrieval](https://huggingface.co/datasets/CMIRB/MedExamRetrieval) | Medical multi-choice exam  | 697 | 27,871 |
 | [DuBaikeRetrieval](https://arxiv.org/abs/xxxx) | [CMIRB/DuBaikeRetrieval](https://huggingface.co/datasets/CMIRB/DuBaikeRetrieval) | Medical search query from BaiDu Search  | 318 | 56,441 |
 | [DXYDiseaseRetrieval](https://arxiv.org/abs/xxxx) | [CMIRB/DXYDiseaseRetrieval](https://huggingface.co/datasets/CMIRB/DXYDiseaseRetrieval) | Disease question from medical website  | 1,255 | 54,021 |
