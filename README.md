@@ -20,7 +20,7 @@
         <a href=#installation>Installation</a> | 
         <a href=#evaluation>Evaluation</a>  |
         <a href="#leaderboard">Leaderboard</a> |
-        <a href="#dataset">Dataset</a> |
+        <a href="#datasets">Datasets</a> |
         <a href="#acknowledgement">Acknowledgement</a> |
     <p>
 </h4>
