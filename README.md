@@ -75,6 +75,7 @@ evaluation = MTEB(tasks=["MedExamRetrieval"], task_langs=['zh', 'zh-CN'])
 | [peg](https://huggingface.co/TownsWu/PEG) | 1024 | 57.46 | 52.78 | 51.68 | 77.38 | 60.96 | 44.42 | 49.3  | 82.56 | 70.38 | 44.74 | 40.38 |
 
 ## Datasets
+The data preprocessing process can be seen in [data_collection_and_processing](./docs/data_collection_and_processing.md).
 
 An overview datasets available in CMIRB is provided in the following table:
 
