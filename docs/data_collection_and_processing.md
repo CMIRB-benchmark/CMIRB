@@ -48,7 +48,7 @@ Note that we use `gpt-4o-mini-2024-07-18` as the LLM through the processing pipe
 Our data preprocessing pipeline, depicted in Algorithm 1
 
 <p align="center">
-  <img src="images/bench.jpg" alt="CMIRB" width="600"/>  
+  <img src="images/data_processing.png" alt="DATA-PROCESSING" width="600"/>  
 </p>
 
 #### Corpus Filtering
