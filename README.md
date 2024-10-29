@@ -3,7 +3,7 @@
     <a href="https://www.python.org/">
             <img alt="Build" src="https://img.shields.io/badge/Contribution-Welcome-blue">
     </a>
-    <a href="https://arxiv.org/abs/XXXX">
+    <a href="https://arxiv.org/abs/2410.20050">
         <img alt="arXiv" src="https://img.shields.io/badge/arXiv-article-green">
     </a>
     <a href="https://huggingface.co/CMIRB">
@@ -26,7 +26,7 @@
 </h4>
 
 ## Description
-CMIRB (Chinese Medical Information Retrieval Benchmark) is a specialized multi-task dataset designed specifically for medical information retrieval. It consists of data collected from various medical online websites, encompassing 5 tasks and 10 datasets, and has practical application scenarios.
+CMIRB (Chinese Medical Information Retrieval Benchmark) is a specialized multi-task dataset designed specifically for medical information retrieval. It consists of data collected from various medical online websites, encompassing 5 tasks and 10 datasets, and has practical application scenarios. The data is available at [CMIRB](https://huggingface.co/CMIRB).
 
 <p align="center">
   <img src="docs/images/bench.jpg" alt="CMIRB" width="600"/>  
@@ -81,16 +81,16 @@ An overview datasets available in CMIRB is provided in the following table:
 
 | Name |  Hub URL | Description | Query #Samples | Doc #Samples | 
 |:-----:|:-----:|:---------------------------:|:-----:|:-----:|
-| [MedExamRetrieval](https://arxiv.org/abs/xxxx) | [CMIRB/MedExamRetrieval](https://huggingface.co/datasets/CMIRB/MedExamRetrieval) | Medical multi-choice exam  | 697 | 27,871 |
-| [DuBaikeRetrieval](https://arxiv.org/abs/xxxx) | [CMIRB/DuBaikeRetrieval](https://huggingface.co/datasets/CMIRB/DuBaikeRetrieval) | Medical search query from BaiDu Search  | 318 | 56,441 |
-| [DXYDiseaseRetrieval](https://arxiv.org/abs/xxxx) | [CMIRB/DXYDiseaseRetrieval](https://huggingface.co/datasets/CMIRB/DXYDiseaseRetrieval) | Disease question from medical website  | 1,255 | 54,021 |
+| [MedExamRetrieval](https://arxiv.org/abs/2410.20050) | [CMIRB/MedExamRetrieval](https://huggingface.co/datasets/CMIRB/MedExamRetrieval) | Medical multi-choice exam  | 697 | 27,871 |
+| [DuBaikeRetrieval](https://arxiv.org/abs/2410.20050) | [CMIRB/DuBaikeRetrieval](https://huggingface.co/datasets/CMIRB/DuBaikeRetrieval) | Medical search query from BaiDu Search  | 318 | 56,441 |
+| [DXYDiseaseRetrieval](https://arxiv.org/abs/2410.20050) | [CMIRB/DXYDiseaseRetrieval](https://huggingface.co/datasets/CMIRB/DXYDiseaseRetrieval) | Disease question from medical website  | 1,255 | 54,021 |
 | [MedicalRetrieval](https://arxiv.org/abs/2203.03367) | [CMIRB/MedicalRetrieval](https://huggingface.co/datasets/C-MTEB/MedicalRetrieval) | Passage retrieval dataset collected from Alibaba search engine systems in medical domain | 1,000  | 100,999 |
 | [CmedqaRetrieval](https://aclanthology.org/2022.emnlp-main.357.pdf) | [CMIRB/CmedqaRetrieval](https://huggingface.co/datasets/C-MTEB/CmedqaRetrieval) |  Online medical consultation text | 3,999 | 100,001 |
-| [DXYConsultRetrieval](https://arxiv.org/abs/xxxx) | [CMIRB/DXYConsultRetrieval](https://huggingface.co/datasets/CMIRB/DXYConsultRetrieval) | Online medical consultation text  | 943 | 12,577 |
+| [DXYConsultRetrieval](https://arxiv.org/abs/2410.20050) | [CMIRB/DXYConsultRetrieval](https://huggingface.co/datasets/CMIRB/DXYConsultRetrieval) | Online medical consultation text  | 943 | 12,577 |
 | [CovidRetrieval](https://aclanthology.org/2022.emnlp-main.357.pdf) | [CMIRB/CovidRetrieval](https://huggingface.co/datasets/C-MTEB/CovidRetrieval) | COVID-19 news articles | 949  | 100,001 |
-| [IIYiPostRetrieval](https://arxiv.org/abs/xxxx) | [CMIRB/IIYiPostRetrieval](https://huggingface.co/datasets/CMIRB/IIYiPostRetrieval) | Medical post articles  | 789 | 27,570 |
-| [CSLCiteRetrieval](https://arxiv.org/abs/xxxx) | [CMIRB/CSLCiteRetrieval](https://huggingface.co/datasets/CMIRB/CSLCiteRetrieval) | Medical literature citation prediction  | 573 | 36,703 |
-| [CSLRelatedRetrieval](https://arxiv.org/abs/xxxx) | [CMIRB/CSLRelatedRetrieval](https://huggingface.co/datasets/CMIRB/CSLRelatedRetrieval) | Medical similar literatue  | 439 | 36,758 |
+| [IIYiPostRetrieval](https://arxiv.org/abs/2410.20050) | [CMIRB/IIYiPostRetrieval](https://huggingface.co/datasets/CMIRB/IIYiPostRetrieval) | Medical post articles  | 789 | 27,570 |
+| [CSLCiteRetrieval](https://arxiv.org/abs/2410.20050) | [CMIRB/CSLCiteRetrieval](https://huggingface.co/datasets/CMIRB/CSLCiteRetrieval) | Medical literature citation prediction  | 573 | 36,703 |
+| [CSLRelatedRetrieval](https://arxiv.org/abs/2410.20050) | [CMIRB/CSLRelatedRetrieval](https://huggingface.co/datasets/CMIRB/CSLRelatedRetrieval) | Medical similar literatue  | 439 | 36,758 |
 
 
  
@@ -104,12 +104,13 @@ We thank the great tool from [FlagEmbedding](https://github.com/FlagOpen/FlagEmb
 If you find this repository useful, please consider citation
 
 ```
-@misc{automir,
+@misc{li2024automireffectivezeroshotmedical,
       title={AutoMIR: Effective Zero-Shot Medical Information Retrieval without Relevance Labels}, 
       author={Lei Li and Xiangxu Zhang and Xiao Zhou and Zheng Liu},
       year={2024},
-      eprint={24xxxxx},
+      eprint={2410.20050},
       archivePrefix={arXiv},
-      primaryClass={cs.CL}
+      primaryClass={cs.IR},
+      url={https://arxiv.org/abs/2410.20050}, 
 }
 ```
